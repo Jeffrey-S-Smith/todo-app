@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react';
 import useForm from '../../hooks/form.js';
-import { SettingsContext } from '../../context/settiing.jsx';
+import { SettingsContext } from '../../context/setting.jsx';
 import { AuthContext } from '../../context/auth.jsx';
 
 
@@ -9,7 +9,7 @@ import { v4 as uuid } from 'uuid';
 const ToDo = () => {
 
   const settings = useContext(SettingsContext);
-  // const auth = useContext(AuthContext);
+ const auth = useContext(AuthContext);
 
   const defaultValues = {
     difficulty: 4,
