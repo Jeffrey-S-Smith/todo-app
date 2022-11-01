@@ -1,16 +1,16 @@
-// import { useContext } from 'react';
-// import { AuthContext } from '../../context/auth';
-// import { When } from 'react-if';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/auth';
+import { When } from 'react-if';
 
-// function Auth({ capability, children }) {
+function Auth({ capability, children }) {
 
-//   const { isLoggedIn, can } = useContext(AuthContext);
+  const { isLoggedIn, can } = useContext(AuthContext);
 
-//   return (
-//     <When condition={isLoggedIn && can(capability)}>
-//       {children}
-//     </When>
-//   )
-// }
+  return (
+    <When condition={isLoggedIn && can(capability)}>
+      {children}
+    </When>
+  )
+}
 
-// export default Auth;
+export default Auth;
