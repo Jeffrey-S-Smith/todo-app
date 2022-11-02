@@ -1,5 +1,5 @@
 import React from 'react';
-import Auth from '../src/components/auth/auth.jsx';
+import Auth from '../src/components/auth/isAuth.jsx';
 import Login from '../src/components/auth/login.jsx';
 import AuthContext from './context/auth';
 import ToDo from '../src/components/todo/todo.jsx'

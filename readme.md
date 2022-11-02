@@ -49,7 +49,7 @@ Run npm test
 ![UML](img/lab31.jpg)
 ![UML](img/lab31-1.jpg)
 ![UML](img/lab31-2.jpg)
-
+![UML](img/lab31-2.jpg)
 ## Resource
 
 [Blueprint](https://blueprintjs.com/docs/)
