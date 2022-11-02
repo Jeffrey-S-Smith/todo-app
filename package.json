@@ -9,10 +9,13 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "bootstrap": "^5.2.2",
+    "jwt-decode": "^3.1.2",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-v5": "^1.4.0",
+    "react-cookie": "^4.1.1",
     "react-dom": "^18.2.0",
+    "react-if": "^4.1.4",
     "react-scripts": "^5.0.1",
     "sass": "^1.55.0",
     "uuid": "^8.3.2"
