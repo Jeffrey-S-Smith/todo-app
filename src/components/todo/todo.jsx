@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
 import useForm from '../../hooks/form.js';
 import { SettingsContext } from '../../context/setting.jsx';
-import { AuthContext } from '../../context/auth.jsx';
+import { AuthContext } from '../../context/auth';
 
 import { v4 as uuid } from 'uuid';
 
