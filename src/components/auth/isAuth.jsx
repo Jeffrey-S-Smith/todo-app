@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../../context/auth';
 import { When } from 'react-if';
 
-function Auth({ capability, children }) {
+function IsAuth({ capability, children }) {
 
   const { isLoggedIn, can } = useContext(AuthContext);
 
@@ -13,4 +13,4 @@ function Auth({ capability, children }) {
   )
 }
 
-export default Auth;
+export default IsAuth;
