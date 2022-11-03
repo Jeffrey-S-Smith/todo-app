@@ -22,7 +22,8 @@ const useForm = (callback, defaultValues={}) => {
    };
 
   useEffect( () => {
-    setValues( defaultValues );
+    console.log(defaultValues);
+    // setValues( defaultValues );
   }, [defaultValues]);
 
   // we are not returning JSX instead we return functions and values

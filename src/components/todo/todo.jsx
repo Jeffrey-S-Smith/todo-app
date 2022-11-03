@@ -17,7 +17,7 @@ const ToDo = () => {
   const [currentPage, updateCurrentPage] = useState(1);
   const [list, setList] = useState([]);
   const [incomplete, setIncomplete] = useState([]);
-  const { handleChange, handleSubmit } = useForm(addItem, defaultValues);
+  const { handleChange, handleSubmit } = useForm(addItem);
 
 
   function handleClick(e){
@@ -88,7 +88,7 @@ const ToDo = () => {
 
         <label>
           <span>Difficulty</span>
-          <input onChange={handleChange} defaultValue={defaultValues.difficulty} type="range" min={1} max={5} name="difficulty" />
+          <input onChange={handleChange} defaultValue={4} type="range" min={1} max={5} name="difficulty" />
         </label>
 
         <label>
