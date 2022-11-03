@@ -1,8 +1,8 @@
 import React from 'react';
 import Auth from '../src/components/auth/isAuth.jsx';
 import Login from '../src/components/auth/login.jsx';
-import AuthContext from './context/auth';
-import ToDo from '../src/components/todo/todo.jsx'
+import AuthContext from './context/auth.js';
+import ToDo from './components/todo/todo.jsx'
 
 
 class App extends React.Component {

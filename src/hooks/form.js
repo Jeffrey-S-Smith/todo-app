@@ -12,14 +12,14 @@ const useForm = (callback, defaultValues={}) => {
 
   const handleChange = (event) => {
     event.persist(); // allows us to to set state values
+    setValues(values => ({ ...values, [event.target.name]: event.target.value }));
+  //   let { name, value } = event.target; // the input element , and slider
+  //   if (parseInt(value)) {
+  //     value = parseInt(value);
+  //   }
 
-    let { name, value } = event.target; // the input element , and slider
-    if (parseInt(value)) {
-      value = parseInt(value);
-    }
-
-    setValues(values => ({ ...values, [name]: value }));
-  };
+  //   setValues(values => ({ ...values, [name]: value }));
+   };
 
   useEffect( () => {
     setValues( defaultValues );
