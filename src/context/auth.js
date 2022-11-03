@@ -39,6 +39,7 @@ function AuthProvider({ children }) {
   let [error, setError] = useState(null);
 
   const can = (capability) => {
+    console.log(user);
     return user?.capabilities?.includes(capability); // optional property reading
   }
 
@@ -47,8 +48,11 @@ function AuthProvider({ children }) {
 
     if (authCreds && authCreds.password === password) {
       try {
+        
+        authCreds.capabilities = jwt_decode(authCreds.token).capabilities;
+        delete authCreds.password;
         _validateToken(authCreds.token);
-        setUser(testUsers[username]);
+        setUser(authCreds);
         setIsLoggedIn(true);
       } catch (e) {
         console.error(e);

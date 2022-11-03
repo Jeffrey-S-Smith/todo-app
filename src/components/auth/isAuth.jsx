@@ -5,9 +5,10 @@ import { When } from 'react-if';
 function IsAuth({ capability, children }) {
 
   const { isLoggedIn, can } = useContext(AuthContext);
-
+console.log(isLoggedIn,can(capability));
+let canDo = Boolean(capability) ? can(capability): true
   return (
-    <When condition={isLoggedIn && can(capability)}>
+    <When condition={isLoggedIn && canDo}>
       {children}
     </When>
   )

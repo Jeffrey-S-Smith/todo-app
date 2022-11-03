@@ -3,6 +3,7 @@ import Auth from '../src/components/auth/isAuth.jsx';
 import Login from '../src/components/auth/login.jsx';
 import AuthContext from './context/auth.js';
 import ToDo from './components/todo/todo.jsx'
+import SettingsProvider from './context/setting.jsx';
 
 
 class App extends React.Component {
@@ -10,8 +11,9 @@ class App extends React.Component {
   render() {
     return (
       <AuthContext>
+        <SettingsProvider>
         <Login />
-
+      
         <Auth>
           <div>Any valid user can see this</div>
         </Auth>
@@ -31,7 +33,7 @@ class App extends React.Component {
         <Auth capability="read">
           <ToDo></ToDo>
         </Auth>
-
+        </SettingsProvider>
       </AuthContext>
     );
   }
