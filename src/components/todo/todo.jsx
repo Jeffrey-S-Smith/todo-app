@@ -65,6 +65,11 @@ const ToDo = () => {
     document.title = `To Do List: ${incomplete}`;
   }, [list]);
 
+  useEffect(() => {
+    //fetch from api get todo list
+  },[]
+  )
+
   return (
     <>
       <header>
